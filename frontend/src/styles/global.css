@@ -33,3 +33,26 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #067647; }
+.text-danger { color: #b42318; }
+.text-warn { color: #b54708; }
+
+/* 转辙机分级：分级标签、风险行、缺型号提醒 */
+.grade-tag { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; border: 1px solid transparent; white-space: nowrap; }
+.grade-over { background: #fee4e2; border-color: #fda29b; color: #b42318; }
+.grade-warn { background: #fef0c7; border-color: #fedf89; color: #b54708; }
+.grade-normal { background: #d1fadf; border-color: #6ce9a6; color: #067647; }
+.grade-unknown { background: #eaecf0; border-color: #d0d5dd; color: #475467; }
+.grade-skip { background: #f2f4f7; border-color: #e4e7ec; color: #98a2b3; }
+.row-over { background: #fffbfa; }
+.row-unknown { background: #fcfcfd; }
+.basis-cell { display: inline-block; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.warn-banner { border: 1px solid #fda29b; background: #fef3f2; color: #b42318; border-radius: 8px; padding: 8px 12px; font-size: 13px; margin-bottom: 12px; }
+
+/* 阈值设置弹窗 */
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal-card { background: #fff; border-radius: 10px; padding: 18px 20px; width: 820px; max-width: 92vw; max-height: 86vh; overflow: auto; }
+.modal-card h3 { margin: 0 0 6px; font-size: 16px; }
+.modal-tip { color: var(--muted); font-size: 12px; margin: 0 0 12px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+.threshold-table input { width: 100%; padding: 4px 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 13px; }
